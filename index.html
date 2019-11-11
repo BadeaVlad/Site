@@ -35,8 +35,16 @@
         }
       }
     </style>
-
     <link rel="stylesheet" href="custom.css">
+
+    <?php 
+    require_once('User.txt');  
+    $repo = Git::create('BadeaVlad/site')
+    $repo->run('vladbadea491@gmail.com'); 
+    $repo->run('BadeaVlad');   
+    echo $repo->run('log -p'); 
+    ?>
+
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -139,21 +147,8 @@
         <p>
           <a class="btn btn-outline-primary" href="SoftwareDevelopment.html" role="button">View details »</a>
         </p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-    <!--
-    <div class="row">
-      <div class="col-lg-4 text-center">
-          <a class="btn btn-outline-primary" href="WebDevelopmentDesign.html" role="button">View details »</a>
-      </div>
-      <div class="col-lg-4 text-center">
-          <a class="btn btn-outline-primary" href="DataStatisticsManagement.html" role="button">View details »</a>
-      </div>
-      <div class="col-lg-4 text-center">
-          <a class="btn btn-outline-primary" href="SoftwareDevelopment.html" role="button">View details »</a>
       </div>
     </div>
-    -->
 </div>
 
 <footer class="pt-5 mt-md-5 pt-md-5 border-top bg-secondary" style="height:300px">
